@@ -1,18 +1,16 @@
-#include <stdio.h>
+ #include <stdio.h>
 int main(){
   
-  int x=1,n,c;
+  int x,n;
   printf("Enter the value of n:\n");
   scanf("%d", &n);
+  n*=2;
+  x=n;
+  printf("The First N Even natural numbers in reverse order are:");
   
-  
-  printf("The squares of the first n numbers in reverse order are:");
-  
-  while(x<=n){
-    c = x*x;
-  printf(" \n%d", c);
-  x++;
+  while(x>=2){
+  printf(" \n%d", x);
+  x-=2;
     
   }
   return 0;
-  }
